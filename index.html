@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alina Arshad | Portfolio</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+    body { background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #fff; line-height: 1.6; overflow-x: hidden; }
+    header { background: rgba(13, 37, 85, 0.95); padding: 60px 40px; display: 
+      flex; justify-content: space-between; align-items: center; flex-wrap:
+       wrap; box-shadow: 0 4px 8px rgba(0,0,0,0.2);  }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo i { font-size: 30px; color: #00d4ff; }
+    
+ 
+
+.logo h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  font-weight: 400;
+  color: #00d4ff;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 5px #00d4ff;
+}
+
+   
+    header {
+  background: linear-gradient(90deg, #001f3f, #005f73);
+  border-bottom: 2px solid #00d4ff;
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 40px 40px; /* optional: increased height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+    
+    
+    nav { display: flex; gap: 20px; }
+    nav a { color: #fff; text-decoration: none; font-weight: 400; position: relative; }
+    nav a::after { content: ''; position: absolute; width: 0; height: 2px; left: 0; bottom: -5px; background-color: #00d4ff; transition: 0.3s ease; }
+    nav a:hover::after { width: 100%; }
+    nav a:hover { color: #00d4ff; }
+
+    nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #00d4ff;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #00d4ff;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  overflow: hidden;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+nav a:hover {
+  color: #00d4ff;
+  border-color: #00d4ff;
+  box-shadow: 0 0 12px #00d4ff;
+}
+
+nav a:hover::before {
+  left: 0;
+}
+
+
+
+
+    .hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 100px 40px; }
+    .hero-text { flex: 1; max-width: 50%; }
+    .hero h2 { font-size: 42px; font-weight: 600; margin-bottom: 10px; }
+    .hero p { font-size: 20px; color: #ddd; margin-bottom: 20px; }
+    .social-icons a { color: #00d4ff; font-size: 24px; margin-right: 15px; transition: color 0.3s ease; }
+    .social-icons a:hover { color: #fff; }
+    .hero-image { flex: 1; display: flex; justify-content: center; align-items: center; }
+    .circle-image { width: 350px; 
+      height: 350px;
+       border-radius: 50%;
+       background: url('sano.jpg') no-repeat center/cover;
+        animation: pulse 2s infinite;
+      box-shadow: 0 0 20px #00d4ff;
+      }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+  .section { margin-bottom: 40px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); padding: 60px 40px; animation: fadeInUp 1s ease; border-left: 4px solid #00d4ff; }
+    .section h3 { 
+      position: relative; 
+      display: inline-block; 
+      color: #00d4ff;
+    
+    }
+    .section h3 {
+  font-size: 30px;
+  margin-bottom: 20px; /* This controls space between heading and cards */
+  border-bottom: 2px solid #00d4ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+    .alina-name {
+  font-family: 'Lobster', cursive;
+  color: #00d4ff;
+  font-size: 45px;
+  text-shadow: 1px 1px 5px #d6e5e8;
+}
+.glow-box {
+  background: #1c3c5b;
+  padding: 30px;
+  border-radius: 16px;
+  margin: 20px 0;
+  position: relative;
+  border: 2px solid #00d4ff;
+  box-shadow: 0 0 15px #00d4ff, 0 0 30px #00d4ff;
+  transition: all 0.3s ease;
+}
+
+
+    .section
+     h3::after { content: ''; position: absolute; width: 60%; height: 3px; background: #00d4ff; left: 0; bottom: -8px; }
+    .grid { display: grid; grid-template-columns: 
+      repeat(auto-fit, minmax(250px, 1fr));
+       gap: 70px; }
+    .card { background: #091e33; padding: 25px; border-radius: 16px; transition: transform 0.4s ease, background 0.4s ease; cursor: pointer; }
+    .card:hover { transform: translateY(-10px); background: #0b799d; }
+    .card h4 { font-size: 22px; margin-bottom: 10px; color: #00d4ff; }
+    .card p { font-size: 16px; color: #ccc; }
+
+    .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px; /* space between cards */
+  margin-top: 30px; /* ✅ space between heading and cards */
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+.project-img:hover {
+  transform: scale(1.05);
+}
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #00d4ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.view-btn:hover {
+  background-color: #00aacc;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #00d4ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #00aacc;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.circle-skill {
+  text-align: center;
+  width: 160px;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: conic-gradient(#00d4ff 0%, #222 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.circle .box {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #0c2e47;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #00d4ff;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+}
+
+.tool-logo {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 6px;
+}
+
+.tool-icon {
+  font-size: 30px;
+  color: #00d4ff;
+  margin-bottom: 6px;
+}
+
+.label {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #eee;
+}
+
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .about-text {
+    padding: 0 15px;
+  }
+
+  .skill-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .circle-skill {
+    margin: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+}
+
+
+    
+    #about { background: #152f45; }
+    #web { background: #1b3d56; }
+    #graphics { background: #20425e; }
+    #lead { background: #264b6a; }
+    #contact { background: #0a1f33; text-align: center; }
+    footer { background: #061126; text-align: center; padding: 20px; font-size: 14px; color: #aaa; }
+    #backToTop { position: fixed; bottom: 30px; right: 30px; background: #00d4ff; color: #000; padding: 10px 15px; border-radius: 50%; font-size: 18px; display: none; z-index: 999; text-align: center; text-decoration: none; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: 0.3s; }
+    #backToTop:hover { background: #fff; color: #00d4ff; }
+    @keyframes fadeInUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @media (max-width: 768px) { header { flex-direction: column; align-items: flex-start; } nav { margin-top: 10px; } .hero { flex-direction: column; text-align: center; } .hero-text, .hero-image { max-width: 100%; } }
+  
+ </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><h1>Welcome on my Portfolio</h1></div>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#web">Web Dev</a>
+      <a href="#graphics">Graphics</a>
+      <a href="#lead">Lead Gen</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text" data-aos="fade-right">
+     <h2>Hello, I'm <span class="alina-name">ALINA ARSHAD</span> 
+ 👋</h2>
+      <p>Web Developer | Graphic Designer | Lead Generation Expert</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <a href="Alina_Resume.pdf" download style="display:inline-block;margin-top:20px;background:#00d4ff;color:#000;padding:10px 20px;border-radius:5px;text-decoration:none;font-weight:bold;">Download Resume</a>
+    </div>
+    <div class="hero-image" data-aos="fade-left">
+      <div class="circle-image"></div>
+    </div>
+  </section>
+
+ <section id="about" class="glow-box" data-aos="fade-up">
+
+
+  <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
+
+    <!-- Left side: Image -->
+    <div style="flex: 1; min-width: 250px; display: flex; justify-content: center;">
+      <img src="sano.jpg" alt="Alina Arshad" style="width: 350px; height: 350px; border-radius: 50%; box-shadow: 0 0 20px #00d4ff;" />
+    </div>
+
+    <!-- Right side: Text + Bullet points -->
+    <div style="flex: 2; min-width: 280px; color: #ccc; font-size: 18px;">
+      <h3> <b> <u> About Me</u></b></h3>
+      <p>Hello! I'm <strong>Alina Arshad</strong> — a passionate and creative Web Developer, Graphic Designer, and Lead Generation Expert. I’m a final-year Bachelor of Science in Artificial Intelligence (BS-AI) student with a strong interest in technology and digital solutions.</p>
+
+      <ul style="list-style: none; padding-left: 0; margin-top: 20px;">
+        <li style="margin-bottom: 12px; display: flex; align-items: center; animation: fadeInUp 0.5s ease forwards;">
+          <i class="fas fa-check-circle" style="color: #00d4ff; margin-right: 10px;"></i>
+          Skilled in building responsive and interactive websites using HTML, CSS, and JavaScript.
+        </li>
+        <li style="margin-bottom: 12px; display: flex; align-items: center; animation: fadeInUp 0.6s ease forwards;">
+          <i class="fas fa-check-circle" style="color: #00d4ff; margin-right: 10px;"></i>
+          Experienced in designing creative visuals using Adobe Photoshop and Canva.
+        </li>
+        <li style="margin-bottom: 12px; display: flex; align-items: center; animation: fadeInUp 0.7s ease forwards;">
+          <i class="fas fa-check-circle" style="color: #00d4ff; margin-right: 10px;"></i>
+          Proficient in B2B lead generation and tools like Apollo, Hunter, and LinkedIn Sales Navigator.
+        </li>
+        <li style="margin-bottom: 12px; display: flex; align-items: center; animation: fadeInUp 0.8s ease forwards;">
+          <i class="fas fa-check-circle" style="color: #00d4ff; margin-right: 10px;"></i>
+          Passionate about combining design and logic to solve real-world problems.
+        </li>
+        <li style="margin-bottom: 12px; display: flex; align-items: center; animation: fadeInUp 0.9s ease forwards;">
+          <i class="fas fa-check-circle" style="color: #00d4ff; margin-right: 10px;"></i>
+          Eager to explore AI, automation, and digital marketing trends.
+        </li>
+      </ul>
+
+      <p style="margin-top: 15px;">I take pride in delivering high-quality work that helps businesses stand out and grow online. Let's build something amazing together!</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <section id="skills" class="glow-box" data-aos="fade-up">
+  <h3 style="text-align: center;">My Skills</h3>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
+    
+    <!-- HTML -->
+    <div class="circle-skill">
+      <div class="circle" data-percent="95">
+        <div class="box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tool-logo" />
+          <span class="counter" data-count="95">0</span>%
+        </div>
+      </div>
+      <div class="label">HTML</div>
+    </div>
+
+    <!-- CSS -->
+    <div class="circle-skill">
+      <div class="circle" data-percent="90">
+        <div class="box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tool-logo" />
+          <span class="counter" data-count="90">0</span>%
+        </div>
+      </div>
+      <div class="label">CSS</div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="circle-skill">
+      <div class="circle" data-percent="85">
+        <div class="box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tool-logo" />
+          <span class="counter" data-count="85">0</span>%
+        </div>
+      </div>
+      <div class="label">JavaScript</div>
+    </div>
+
+   <!-- Photoshop -->
+<div class="circle-skill">
+  <div class="circle" data-percent="90">
+    <div class="box">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" alt="Photoshop" class="tool-logo" />
+      <span class="counter" data-count="90">0</span>%
+    </div>
+  </div>
+  <div class="label">Photoshop</div>
+</div>
+
+
+   <!-- CorelDRAW -->
+<div class="circle-skill">
+  <div class="circle" data-percent="95">
+    <div class="box">
+      <img src="https://img.icons8.com/color/96/coreldraw.png" alt="CorelDRAW" class="tool-logo" />
+      <span class="counter" data-count="95">0</span>%
+    </div>
+  </div>
+  <div class="label">CorelDRAW</div>
+</div>
+
+
+    <!-- Lead Generation -->
+    <div class="circle-skill">
+      <div class="circle" data-percent="80">
+        <div class="box">
+          <i class="fas fa-user-tie tool-icon"></i>
+          <span class="counter" data-count="88">0</span>%
+        </div>
+      </div>
+      <div class="label">Lead Generation</div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <section id="web" class=" glow-box" data-aos="fade-up">
+    <h3>Web Development</h3>
+    <div class="grid">
+
+      <div class="card">
+  <img src="images/web1.jpg" alt="Portfolio Website" class="project-img" />
+  <h4>Responsive Portfolio</h4>
+  <p>Fully responsive portfolio website built with HTML, CSS & JS.</p>
+  <a href="#" class="view-btn" target="_blank">View Project</a>
+</div>
+
+<div class="card">
+  <img src="images/web2.jpg" alt="Restaurant Website" class="project-img" />
+  <h4>Restaurant Website</h4>
+  <p>Modern restaurant layout with menu and contact features.</p>
+  <a href="#" class="view-btn" target="_blank">View Project</a>
+</div>
+
+<div class="card">
+  <img src="images/web3.jpg" alt="E-commerce Design" class="project-img" />
+  <h4>E-commerce Landing Page</h4>
+  <p>Landing page for a fashion store with clean design.</p>
+  <a href="#" class="view-btn" target="_blank">View Project</a>
+</div>
+
+      <div class="card">
+         <img src="images/web3.jpg" alt="E-commerce Design" class="project-img" />
+        <h4>Blog and Content website</h4><p>A modern, mobile-friendly personal site.</p>
+      <a href="#" class="view-btn" target="_blank">View Project</a>
+      </div>
+     
+  </section>
+
+  <section id="graphics" class="glow-box" data-aos="fade-up">
+    <h3>Graphic Design</h3>
+    <div class="grid">
+
+      <div class="card">
+  <img src="images/poster1.jpg" alt="Social Media Poster" class="project-img" />
+  <h4>Instagram Poster</h4>
+  <p>Designed a bold and engaging Instagram post for a product launch.</p>
+
+  <a href="images/poster1.jpg" class="view-btn" target="_blank">View Design</a>
+
+</div>
+
+<div class="card">
+  <img src="images/flyer1.jpg" alt="Business Flyer" class="project-img" />
+  <h4>Business Flyer</h4>
+  <p>Corporate flyer layout created in Adobe Illustrator and Canva.</p>
+  
+  <a href="images/flyer1.jpg" class="view-btn" target="_blank">View Design</a>
+</div>
+
+<div class="card">
+  <img src="images/logo1.jpg" alt="Logo Design" class="project-img" />
+  <h4>Banner Design</h4>
+  <p>Minimalist logo for a fashion brand using black and golden theme.</p>
+  <a href="images/logo1.jpg" class="view-btn" target="_blank">View Design</a>
+</div>
+
+      <div class="card">
+         <img src="images/social1.jpg" alt="Logo Design" class="project-img" />
+        <h4>Social Media Posters</h4><p>Creative designs for branding and promotions.</p>
+       <a href="images/social1.jpg" class="view-btn" target="_blank">View Design</a>
+      </div>
+     
+    </div>
+  </section>
+
+  <section id="lead" class="glow-box" data-aos="fade-up">
+    <h3>Lead Generation</h3>
+    <div class="grid">
+      <div class="card"><h4>B2B Leads</h4><p>Targeted leads with verified emails and LinkedIn profiles.</p></div>
+      <div class="card"><h4>Email List Building</h4><p>Industry-specific email lists using Apollo, Hunter, and more.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="glow-box" data-aos="fade-up">
+    <h3>Contact Me</h3>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 500px; margin: 0 auto;">
+      <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+      <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+      <textarea name="message" placeholder="Your Message" required style="width: 100%; padding: 10px; margin: 10px 0; height: 120px;"></textarea>
+      <button type="submit" style="background: #00d4ff; color: #000; padding: 10px 20px; border: none; cursor: pointer; font-weight: bold;">Send</button>
+    </form>
+    <p style="margin-top: 20px;">Or WhatsApp: +92 3260586147</p>
+  </section>
+
+  <footer>&copy; 2025 Alina Arshad | All Rights Reserved</footer>
+
+  <a href="#" id="backToTop" title="Back to Top"><i class="fas fa-chevron-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+  </script>
+
+  <script>
+  // Counter animation
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-count');
+      const count = +counter.innerText;
+      const increment = target / 50;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 30);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
+
+  // Animate circular charts
+  const circles = document.querySelectorAll('.circle');
+  circles.forEach(circle => {
+    const percent = circle.getAttribute('data-percent');
+    circle.style.background = `conic-gradient(#00d4ff ${percent * 3.6}deg, #222 ${percent * 3.6}deg)`;
+  });
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>
